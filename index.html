@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/icon" href="/src/assets/favicon.png">
+    <title>Registeration Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#Login" id="login">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="signup">
+        <div>
+            <img src="/src/assets/signup.jpg" alt="signup-img" class="bg-img"/>
+        </div>
+
+        <div class="section-2">
+            <form id="form" class='form' action="/" method="get">
+                <h1>Create Account</h1>
+            <div class="form-control">
+            <label for="firstname"> First Name <span aria-label="required" class="req">*</span>
+            </label>
+                <br>
+                <input id="firstname" type="text" name="firstname"  value='' placeholder="Enter your First Name"
+                minlength="4" maxlength="25"/>
+                <i class="fa fa-user"></i>
+                <div><small class="errMessage">this field is required</small></div>
+            </div>
+            <br class="m-2"/>
+
+            <div class="form-control">
+            <label for="lastname"> Last Name 
+                <span aria-label="required" class="req">*</span></label>
+                <br>
+                <input id="lastname" type="text" name="lastname" placeholder="Enter your Last Name" 
+                minlength="4" maxlength="25"/>
+                <i class="fa fa-user"></i>
+                <div><small class="errMessage">this field is required</small></div>
+            </div>
+            <br class="m-2"/>
+
+            <div class="form-control">
+            <label for="phone"> Phone Number 
+                <span aria-label="required" class="req">*</span></label>
+                <br>
+                <input id="phone" type="tel" name="phone" placeholder="Enter your Phone Number" 
+                minlength="9" maxlength="25"/>
+                <i class="fa fa-phone"></i>
+                <div><small class="errMessage">this field is required</small></div>
+           </div> 
+            <br class="m-2"/>
+
+            <div class="form-control">
+            <label for="email"> Email Address 
+                <span aria-label="required" class="req">*</span></label>
+                <br>
+                <input id="email" type="email" name="email"  placeholder="Enter your Email Address"/>
+                <i class="fa fa-envelope"></i>
+                <div><small class="errMessage">this field is required</small></div>
+            </div>
+            <br class="m-2"/>
+
+            <div class="form-control">
+            <label for="password"> Password 
+                <span aria-label="required" class="req">*</span> </label>
+                <br>
+                <input id="password" type="password" name="password"  placeholder="Enter your Password" 
+                minlength="8" maxlength="25"/>
+                <i class="fa fa-eye-slash" id="hide"></i>
+                <i class="fa fa-eye" id="show"></i>
+                <small class="errMessage">this field is required</small>
+            </div>
+
+            <br class="m-2"/>
+            <input type="submit" value='Submit' class="submit-button" id="submit" />
+            </form>
+        </div>
+    </section>
+<script src="/js/App.js" defer></script>
+<script src="/js/password.js" defer></script>
+
+</body>
+</html>
